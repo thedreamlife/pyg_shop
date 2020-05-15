@@ -1,0 +1,25 @@
+<!--pages/collect/collect.wxml-->
+<TarBar tabs="{{tabs}}" bindTabsItemChange="handleTarBarItem">
+    <view class="collect_main">
+        <view class="collect_title">
+            <text class="collect_tips active">全部</text>
+            <text class="collect_tips">正在热卖</text>
+            <text class="collect_tips">即将上线</text>
+        </view>
+        <view class="collect_content">
+             <navigator wx:for="{{collect}}" wx:key="index" >
+                <view class="goods_img_wrap">
+                    <image class="goods_img" mode="widthFix" src="{{item.goods_small_logo}}"></image>
+                </view>
+                <view class="goods_content">
+                    <view class="goods_title">{{item.goods_name}}</view>
+                    <view class="goods_price">{{item.goods_price}}</view>
+                </view>
+            </navigator>
+        </view>
+        <view class="collect_content">
+
+        </view>
+    </view>
+</TarBar>
+

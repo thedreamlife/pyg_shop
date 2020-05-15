@@ -1,0 +1,19 @@
+/* component/tarbar/TarBar.wxss */
+
+.active {
+    color: var(--themeColor);
+    padding-bottom: 10rpx;
+    border-bottom: 1rpx solid currentColor;
+}
+
+.tarbar {
+    display: flex;
+}
+
+.tar_title {
+    padding: 15rpx, 0;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

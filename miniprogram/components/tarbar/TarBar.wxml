@@ -1,0 +1,12 @@
+<!--component/tarbar/TarBar.wxml-->
+<view class="tabs">
+<view class="tarbar">
+    <view class="tar_title   {{item.isActive?'active':''}}" 
+    wx:for="{{tabs}}"  bindtap="handleTab" data-index="{{index}}">
+        {{item.value}}
+    </view>
+</view>
+<view class="tar_content">
+    <slot></slot>
+    </view>
+</view>

@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "searchinput": "../../components/searchinput/searchinput",
+        "TarBar": "../../components/tarbar/TarBar"
+    },
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark"
+}

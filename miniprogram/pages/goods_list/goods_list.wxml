@@ -1,0 +1,25 @@
+<!--pages/goods_list/goods_list.wxml-->
+<!-- 搜索框 -->
+<searchinput></searchinput>
+<TarBar tabs="{{tabs}}" bindTabsItemChange="handleTarBarItem">
+<block wx:if="{{tabs[0].isActive}}">
+<view class="goods_list">
+  <navigator wx:for="{{goodsList}}" wx:key="index" url="/pages/goods_item/goods_item?goods_id={{item.goods_id}}">
+    <view class="goods_img_wrap">
+      <image class="goods_img" mode="widthFix" src="{{item.goods_small_logo}}"></image>
+    </view>
+    <view class="goods_content">
+    <view class="goods_title">{{item.goods_name}}</view>
+    <view class="goods_price">{{item.goods_price}}</view>
+  </view>
+  </navigator>
+</view>
+ </block>
+<block wx:if="{{tabs[1].isActive}}">
+2
+ </block>
+ <block wx:if="{{tabs[2].isActive}}">
+ 3
+ </block>
+</TarBar>
+
